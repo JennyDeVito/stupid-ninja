@@ -2,4 +2,4 @@
 
 Este repositório é uma tentativa de armazenar resumos e pequenos tutoriais
 para a Jenny DeVito do futuro não esquecer pequenas tarefas e comandos
-importantes porém repetitivas.
+importantes porém repetitivos.
