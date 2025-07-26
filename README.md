@@ -1,5 +1,4 @@
-# Resumos e tutoriais
+# Commands e tutorials
 
-Este repositório é uma tentativa de armazenar resumos e pequenos tutoriais
-para a Jenny DeVito do futuro não esquecer pequenas tarefas e comandos
-importantes porém repetitivos.
+This repository holds a small attemptive to keep at hand usefull commands
+and tutorials to help the future Jenny.
