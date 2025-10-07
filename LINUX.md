@@ -255,7 +255,7 @@ Shows the content of a file in a upside-down way pointing to the \n character:
 
 
 ### Removing files (rm)
-Removes files normally (one by one) or recursively (like a path of destruction):
+Remove files normally (one by one) or recursively (like a path of destruction):
 
         rm filename
         rm Path/filename
@@ -264,7 +264,7 @@ Removes files normally (one by one) or recursively (like a path of destruction):
 Bash will ask if you really want to delete the file and give you a y/n option
 But, that's not the case in Debian 12, for example.
 
-Removes directories normally (one by one) or recursively (like a path of
+Remove directories normally (one by one) or recursively (like a path of
 destruction):
 
         rm -r Directory/
@@ -274,19 +274,19 @@ Bash will ask if you really want to delete the directory and give you a y/n
 option. But, that's not the case in Debian 12, for example.
 
 
-Removes, by force, directories recursively (without asking, even if it is
+Remove, by force, directories recursively (without asking, even if it is
 configured to):
 
         rm -rf Directory/
 
 
-Removes a file:
+Remove a file:
 
         rm -f filename
         rm -f Path/filename
 
 
-Removes a hidden file:
+Remove a hidden file:
 
         rm -f .filename
         rm -f Path/.filename
@@ -298,7 +298,7 @@ If you want a confirmation before removing a file or a directory:
         rm -r -i Directory/
 
 
-Removes all non hidden files and directories inside a directory:
+Remove all non hidden files and directories inside a directory:
 
         rm -rf *
 
