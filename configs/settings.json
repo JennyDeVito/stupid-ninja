@@ -1,0 +1,550 @@
+/** @format */
+
+{
+	// ======= Overrides by language =======
+	// C / C++ → cpptools com clang-format (80 col)
+	"[c]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "wordWrapColumn",
+	},
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "wordWrapColumn",
+	},
+	// C# e xml → CSharpier (wrap no csharpier)
+	"[csharp]": {
+		"editor.defaultFormatter": "csharpier.csharpier-vscode",
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "wordWrapColumn",
+	},
+	"[css]": {
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "bounded",
+		"editor.defaultFormatter": "vscode.css-language-features",
+	},
+	// HTML/CSS bounded:
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features",
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "bounded",
+	},
+	// JavaScript: formatado pelo prettier
+	"[javascript]": {
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "wordWrapColumn",
+	},
+	"[jsonc]": {
+		"editor.quickSuggestions": {
+			"strings": true,
+		},
+		"editor.suggest.insertMode": "replace",
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.wordWrap": "on",
+		"prettier.insertPragma": false,
+	},
+	// Pascal → sem formatar no save (até configurar o ptop.cfg)
+	"[pascal]": {
+		"editor.formatOnSave": true,
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "wordWrapColumn",
+	},
+	// Python → Black (80 col)
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "wordWrapColumn",
+	},
+	// TypeScript: formatado pelo prettier
+	"[typescript]": {
+		"editor.language.brackets": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.language.colorizedBracketPairs": [
+			["(", ")"],
+			["[", "]"],
+			["{", "}"],
+		],
+		"editor.wordWrap": "wordWrapColumn",
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "csharpier.csharpier-vscode",
+	},
+	"black-formatter.args": ["--line-length", "80"],
+	"black-formatter.showNotifications": "onWarning",
+	"C_Cpp.autocompleteAddParentheses": true,
+	"C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, ColumnLimit: 80 }",
+	"C_Cpp.commentContinuationPatterns": ["/**", "**/", "/*", "*/"],
+	"C_Cpp.default.cStandard": "c99",
+	"C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+	"C_Cpp.formatting": "clangFormat",
+	"C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+	"C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+	"C_Cpp.inlayHints.parameterNames.enabled": true,
+	"C_Cpp.inlayHints.referenceOperator.enabled": true,
+	"C_Cpp.inlayHints.referenceOperator.showSpace": true,
+	"css.format.spaceAroundSelectorSeparator": true,
+	"css.lint.boxModel": "warning",
+	"css.lint.compatibleVendorPrefixes": "warning",
+	"css.lint.duplicateProperties": "error",
+	"css.lint.idSelector": "warning",
+	"diffEditor.experimental.showMoves": true,
+	"diffEditor.experimental.useTrueInlineView": true,
+	"diffEditor.hideUnchangedRegions.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.allowVariableLineHeights": false,
+	"editor.autoClosingBrackets": "always",
+	"editor.autoClosingComments": "always",
+	"editor.autoClosingDelete": "always",
+	"editor.autoClosingOvertype": "always",
+	"editor.autoClosingQuotes": "always",
+	"editor.autoIndent": "advanced",
+	"editor.autoIndentOnPaste": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.codeActions.triggerOnFocusChange": true,
+	"editor.codeActionsOnSave": {
+		"source.sort.json": "always",
+	},
+	"editor.codeActionWidget.includeNearbyQuickFixes": true,
+	"editor.codeLens": true,
+	"editor.codeLensFontFamily": "'AnonymicePro Nerd Font Mono', 'monospace', monospace",
+	"editor.colorDecorators": true,
+	"editor.colorDecoratorsActivatedOn": "clickAndHover",
+	"editor.columnSelection": false,
+	"editor.comments.ignoreEmptyLines": true,
+	"editor.comments.insertSpace": true,
+	"editor.copyWithSyntaxHighlighting": true,
+	"editor.defaultColorDecorators": "auto",
+	"editor.defaultFoldingRangeProvider": null,
+	// Prettier como default para o que ele suporta
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.definitionLinkOpensInPeek": true,
+	"editor.dragAndDrop": false,
+	"editor.dropIntoEditor.enabled": false,
+	"editor.dropIntoEditor.preferences": ["text.plain"],
+	"editor.dropIntoEditor.showDropSelector": "never",
+	"editor.fontFamily": "'AnonymicePro Nerd Font Mono', 'monospace', monospace",
+	"editor.fontLigatures": false,
+	//======= FORMATADORES =======
+	// Formata ao colar
+	"editor.formatOnPaste": true,
+	// Formata ao salvar
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.indentSize": "tabSize",
+	// GitHub Copilot: só funciona quando pedir (Ctrl+Enter)
+	"editor.inlineSuggest.enabled": true,
+	"editor.inlineSuggest.experimental.showOnSuggestConflict": "always",
+	// Identação
+	"editor.insertSpaces": true,
+	"editor.language.brackets": [
+		["(", ")"],
+		["[", "]"],
+		["{", "}"],
+	],
+	"editor.language.colorizedBracketPairs": [
+		["(", ")"],
+		["[", "]"],
+		["{", "}"],
+	],
+	"editor.minimap.enabled": false,
+	"editor.mouseMiddleClickAction": "default",
+	"editor.pasteAs.preferences": ["text.plain", "html", "chat.attach.text"],
+	// IntelliSense (autocompletar padrão do VS Code)
+	"editor.quickSuggestions": {
+		"comments": false,
+		"other": true,
+		"strings": false,
+	},
+	"editor.renderLineHighlight": "all",
+	"editor.rulers": [80],
+	"editor.semanticTokenColorCustomizations": {
+		"enabled": true,
+	},
+	"editor.suggest.insertMode": "replace",
+	"editor.suggest.localityBonus": true,
+	"editor.suggestOnTriggerCharacters": true,
+	"editor.tabCompletion": "on",
+	"editor.tabSize": 4,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			/* --------- LARANJA (base) --------- */
+			{
+				"scope": [
+					"keyword.pascal",
+					"keyword.other.record.pascal",
+					"keyword.other.type.pascal",
+					"storage.type.array.pascal",
+					"keyword.other.array.pascal",
+					"keyword.operator.of.pascal",
+				],
+				"settings": {
+					"fontStyle": "bold",
+					"foreground": "#FFB86C",
+				},
+			},
+			/* --------- MAGENTA (sobrepõe controle) --------- */
+			{
+				"scope": [
+					"keyword.control.pascal",
+					"keyword.other.pascal",
+					"storage.modifier.pascal",
+				],
+				"settings": {
+					"fontStyle": "bold",
+					"foreground": "#FF79C6",
+				},
+			},
+			/* --------- FUNÇÕES --------- */
+			{
+				"scope": "entity.name.function.pascal",
+				"settings": {
+					"foreground": "#0090FF",
+				},
+			} /* suas funções */,
+			/* --------- VARIÁVEIS / PARÂMETROS (azul-claro) --------- */
+			{
+				"scope": ["variable.other.pascal", "variable.parameter.pascal"],
+				"settings": {
+					"foreground": "#5AA7D9",
+				},
+			},
+			/* --------- TIPOS (amarelo) --------- */
+			{
+				"scope": [
+					"storage.type.pascal",
+					"entity.name.type.pascal",
+					"support.type.pascal",
+				],
+				"settings": {
+					"foreground": "#AF002A",
+				},
+			},
+			/* integer/boolean etc. quando marcados como variable.other */
+			{
+				"scope": [
+					"variable.other.pascal meta.type.alias.pascal",
+					"variable.other.pascal meta.declaration.pascal",
+					"variable.other.pascal meta.parameterlist.pascal",
+				],
+				"settings": {
+					"foreground": "#958CFA",
+				},
+			},
+			/* --------- NÚMEROS --------- */
+			{
+				"scope": "constant.numeric.pascal",
+				"settings": {
+					"foreground": "#BD93F9",
+				},
+			},
+			/* --------- STRINGS --------- */
+			{
+				"scope": [
+					"string.quoted.pascal",
+					"string.quoted.single.pascal",
+					"string.quoted.double.pascal",
+					"string.unquoted.pascal" /* p/ casos como `uses crt;` */,
+				],
+				"settings": {
+					"foreground": "#008000",
+				},
+			},
+			/* --------- COMENTÁRIOS --------- */
+			{
+				"scope": [
+					"comment.line.pascal",
+					"comment.line.double-slash.pascal",
+					"comment.block.pascal",
+				],
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#8091A7",
+				},
+			},
+		],
+	},
+	"editor.wordBasedSuggestions": "currentDocument",
+	"editor.wordSegmenterLocales": ["pt-BR", "en-US"],
+	// Word Wrap Global: desligado + régua visual
+	"editor.wordWrap": "off",
+	"editor.wordWrapColumn": 80,
+	"explorer.confirmDelete": false,
+	"explorer.incrementalNaming": "smart",
+	"extensions.closeExtensionDetailsOnViewChange": true,
+	// Associação de arquivos do Pascal
+	"files.associations": {
+		"*.pas": "pascal",
+		"*.pp": "pascal",
+	},
+	// Autosave
+	"files.autoSave": "onWindowChange",
+	"files.autoSaveDelay": 1000,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"github.copilot.advanced": {},
+	"github.copilot.enable": {
+		"*": false,
+		"markdown": false,
+		"plaintext": false,
+		"scminput": false,
+	},
+	// HIGHLIGHT: Configura To Do's
+	"highlight.regexes": {
+		"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:DEBUG)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+			"decorations": [
+				{
+					"backgroundColor": "#00CC66",
+					"color": "#1f1f1f",
+					"fontWeight": "bold",
+					"overviewRulerColor": "#00CC66",
+				},
+				{
+					"backgroundColor": "#00CC66",
+					"color": "#1f1f1f",
+				},
+			],
+			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		},
+		"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:DÚVIDA|DOUBT|QUESTION|PERGUNTA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+			"decorations": [
+				{
+					"backgroundColor": "#F58438",
+					"color": "#1f1f1f",
+					"fontWeight": "bold",
+					"overviewRulerColor": "#F58438",
+				},
+				{
+					"backgroundColor": "#F58438",
+					"color": "#1f1f1f",
+				},
+			],
+			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		},
+		"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:EXPLANATION|EXPLICAÇÃO|EXP)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+			"decorations": [
+				{
+					"backgroundColor": "#C6C0F3",
+					"color": "#1f1f1f",
+					"fontWeight": "bold",
+					"overviewRulerColor": "#C6C0F3",
+				},
+				{
+					"backgroundColor": "#C6C0F3",
+					"color": "#1f1f1f",
+				},
+			],
+			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		},
+		"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|HACK|ECA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+			"decorations": [
+				{
+					"backgroundColor": "#cc0000",
+					"color": "#1f1f1f",
+					"fontWeight": "bold",
+					"overviewRulerColor": "#cc0000",
+				},
+				{
+					"backgroundColor": "#cc0000",
+					"color": "#1f1f1f",
+				},
+			],
+			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		},
+		"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+			"decorations": [
+				{
+					"backgroundColor": "#cc00cc",
+					"color": "#1f1f1f",
+					"fontWeight": "bold",
+					"overviewRulerColor": "#cc00cc",
+				},
+				{
+					"backgroundColor": "#cc00cc",
+					"color": "#1f1f1f",
+				},
+			],
+			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		},
+		"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+			"decorations": [
+				{
+					"backgroundColor": "#00ccff",
+					"color": "#1f1f1f",
+					"fontWeight": "bold",
+					"overviewRulerColor": "#00ccff",
+				},
+				{
+					"backgroundColor": "#00ccff",
+					"color": "#1f1f1f",
+				},
+			],
+			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		},
+		"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:TODO)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+			"decorations": [
+				{
+					"backgroundColor": "#ffcc00",
+					"color": "#1f1f1f",
+					"fontWeight": "bold",
+					"overviewRulerColor": "#ffcc00",
+				},
+				{
+					"backgroundColor": "#ffcc00",
+					"color": "#1f1f1f",
+				},
+			],
+			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		},
+	},
+	"html.format.indentInnerHtml": true,
+	"html.format.wrapLineLength": 100,
+	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+	"javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+	"javascript.format.semicolons": "insert",
+	"javascript.referencesCodeLens.enabled": true,
+	"javascript.referencesCodeLens.showOnAllFunctions": true,
+	"launch": {
+		"compounds": [],
+		"configurations": [],
+		"inputs": [],
+		"version": "0.2.0",
+	},
+	"less.format.spaceAroundSelectorSeparator": true,
+	"less.lint.boxModel": "warning",
+	"less.lint.duplicateProperties": "warning",
+	// Configs do OminiPascal
+	"omnipascal.createBuildScripts": true,
+	"omnipascal.defaultDevelopmentEnvironment": "FreePascal",
+	"omnipascal.usesListStyle": "oneItemPerLine",
+	// Opções do Pascal Formatter (ptop)
+	"pascal.format.indent": 4,
+	"pascal.formatter.engine": "ptop",
+	"pascal.formatter.engineParameters": "/home/jdevito/Pascal/ptop.cfg",
+	// TODO: Editar ptop.cfg e reativar a extensão
+	"pascal.formatter.enginePath": "/usr/bin/ptop",
+	"prettier.bracketSameLine": true,
+	"prettier.insertPragma": true,
+	"prettier.printWidth": 80,
+	"prettier.singleAttributePerLine": true,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"pylint.showNotifications": "onWarning",
+	// Exclui arquivos da busca
+	"search.exclude": {
+		"**/*.{doc,docx,xls,xlsx,ppt,pptx}": true,
+		"**/*.{odt,ods,odp}": true,
+		"**/*.pdf": true,
+	},
+	"window.openFoldersInNewWindow": "on",
+	"workbench.colorCustomizations": {},
+	// Tema do VSCode
+	"workbench.colorTheme": "Noctis Hibernus",
+	"workbench.commandPalette.experimental.suggestCommands": true,
+	"workbench.commandPalette.preserveInput": true,
+	"workbench.editor.alwaysShowEditorActions": true,
+	"workbench.editor.wrapTabs": true,
+	"workbench.experimental.cloudChanges.autoStore": "onShutdown",
+	"workbench.externalBrowser": "Opera",
+	"workbench.externalUriOpeners": {
+		"http": "default",
+		"https": "default",
+	},
+	// Aparência
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.settings.applyToAllProfiles": [],
+	"workbench.settings.editor": "ui",
+	"workbench.settings.openDefaultKeybindings": true,
+	"workbench.settings.openDefaultSettings": true,
+	"workbench.settings.useSplitJSON": true,
+	"workbench.tree.indent": 15,
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.view.alwaysShowHeaderActions": true,
+	"zenMode.hideStatusBar": false,
+	"wakatime.apiKey": "",
+	"workbench.editor.editorActionsLocation": "titleBar",
+	"security.workspace.trust.banner": "never",
+	"window.confirmSaveUntitledWorkspace": false,
+	"git.openRepositoryInParentFolders": "never",
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.panel.showLabels": false,
+	"html.format.extraLiners": "",
+}
