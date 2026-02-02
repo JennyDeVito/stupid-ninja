@@ -8,6 +8,14 @@ Always use `TAB`: it will autocomplete your commands, filenames and directory na
 
 `*` are a important wildcard and will help you when searching through
 
+To connect in a active Virtual Machine's terminal through using your bash:
+
+```bash
+ssh username@IP_Address
+```
+
+_Use `ip address` to find the VM's IP; Then follow the instructions (VM's user and password to log in)._
+
 ## General bash commands
 
 Clear the terminal srcreen: `CTRL + l`
@@ -36,7 +44,7 @@ Lists drives and partitions
 df -h
 ```
 
-## Navigating through directories
+## Navigating through directories~
 
 Shows in which directory you are:
 
@@ -158,13 +166,15 @@ ls -l DirectoryName -d
 Long list of files with the symbolic link as the same size as the original
 file:
 
-````bash
+```bash
 ls -l -L
+```
 
 Long list of files with only the owner column of the files:
+
 ```bash
 ls -l -o
-````
+```
 
 Long list of files with only the group owner column of the files:
 
@@ -474,7 +484,7 @@ mv -i file_to_be_moved Path/destination_directory
 
 _Apparently, it doesn't work on Debian 12. It just moved the file without any interaction._
 
-<!-- TODO: test in Linux Mint -->
+<!-- TODO: test it in Linux Mint -->
 
 Change the filename at the same time you make the copy:
 
